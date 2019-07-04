@@ -1,0 +1,98 @@
+{
+  "name": "antd-admin",
+  "version": "5.0.3",
+  "private": true,
+  "description": "An admin dashboard application demo built upon Ant Design and UmiJS",
+  "homepage": ".",
+  "dependencies": {
+    "@lingui/react": "2.7.2",
+    "ant-design-pro": "2.2.1",
+    "antd": "3.12.0",
+    "axios": "0.18.0",
+    "babel-core": "7.0.0-bridge.0",
+    "classnames": "2.2.6",
+    "dva-model-extend": "0.1.2",
+    "echarts": "4.2.0-rc.2",
+    "echarts-for-react": "2.0.15-beta.0",
+    "json-format": "1.0.1",
+    "lodash": "4.17.11",
+    "nprogress": "0.2.0",
+    "path-to-regexp": "2.4.0",
+    "prop-types": "15.6.2",
+    "react-amap": "1.0.1",
+    "react-helmet": "5.2.0",
+    "react-perfect-scrollbar": "1.4.4",
+    "store": "2.0.12"
+  },
+  "devDependencies": {
+    "@lingui/babel-preset-react": "2.7.2",
+    "@lingui/cli": "2.7.2",
+    "@lingui/loader": "2.7.2",
+    "babel-eslint": "10.0.1",
+    "babel-plugin-dev-expression": "0.2.1",
+    "babel-plugin-import": "1.10.0",
+    "babel-plugin-macros": "2.4.2",
+    "babel-plugin-module-resolver": "3.1.1",
+    "cross-env": "5.2.0",
+    "eslint": "5.12.0",
+    "eslint-config-react-app": "3.0.5",
+    "eslint-plugin-flowtype": "3.0.0",
+    "eslint-plugin-import": "2.6.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "husky": "1.2.0",
+    "less-vars-to-js": "1.3.0",
+    "lint-staged": "8.1.0",
+    "mockjs": "1.0.1-beta3",
+    "module": "1.2.5",
+    "prettier": "1.15.2",
+    "stylelint": "9.9.0",
+    "stylelint-config-prettier": "4.0.0",
+    "stylelint-config-standard": "18.2.0",
+    "umi": "2.6.16",
+    "umi-plugin-react": "1.4.0"
+  },
+  "optionalDependencies": {},
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --ext .js --fix",
+      "npm run prettier",
+      "git add"
+    ],
+    "**/*.less": [
+      "stylelint --syntax less",
+      "npm run prettier",
+      "git add"
+    ]
+  },
+  "lingui": {
+    "fallbackLocale": "en",
+    "sourceLocale": "en",
+    "localeDir": "src/locales",
+    "srcPathDirs": [
+      "src/pages",
+      "src/layouts",
+      "src/components",
+      "src/layouts"
+    ],
+    "format": "minimal",
+    "extractBabelOptions": {
+      "presets": [
+        "umi/babel"
+      ]
+    }
+  },
+  "scripts": {
+    "analyze": "cross-env ANALYZE=1 umi build",
+    "build": "umi build",
+    "lint:js": "eslint --ext .js src",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less",
+    "start": "umi dev",
+    "test": "cross-env BABELRC=none umi test",
+    "prettier": "prettier --write 'src/**/*.(js|less)'",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "trans": "lingui extract --clean && node ./scripts/translate.js",
+    "doc": "docsify serve docs"
+  }
+}

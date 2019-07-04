@@ -1,0 +1,76 @@
+// 活动管理模块，更改Upload大小
+:global(.uploadImg-w-h-70 .ant-upload-list-picture-card .ant-upload-list-item) {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+}
+
+:global(.uploadImg-w-h-100 .ant-upload-list-picture-card .ant-upload-list-item) {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+:global(.uploadImg-w-h-100 .anticon-delete) {
+  display:none
+}
+
+:global(.uploadImg-w-h-70 .anticon-delete) {
+  display:none
+}
+
+:global(.uploadImg-w-h-70 .ant-upload-list-picture-card .ant-upload-list-item-info:before) {
+  margin-left: -50%;
+}
+
+:global(.uploadImg-w-h-80 .ant-upload-list-picture-card .ant-upload-list-item ) {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+:global(.uploadImg-w-h-80 .ant-upload.ant-upload-select-picture-card) {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+:global(.uploadImg-w-h-60) {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+:global(.uploadImg-w-h-60 .ant-upload-list-picture-card .ant-upload-list-item) {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+:global(.uploadImg-w-h-60 .ant-upload.ant-upload-select-picture-card) {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+:global(.uploadImg-w-h-60 .ant-upload.ant-upload-select-picture-card > .ant-upload) {
+  padding-top: 10px;
+}
+:global(.pull-left) {
+  float: left;
+}
+
+// 商品管理模块，隐藏上传后的文件列表
+:global(.goodsManagementUpload .ant-upload-list-item) {
+  display:none
+}
+// 品牌管理图片大小控制table大小
+:global(.tableDiv td){
+  padding-top: 2px!important;
+  padding-bottom: 2px!important;
+}
+// 商品管理 查看的时候 disabled 样式 改成底色白色字体灰色 好看
+:global(.ant-input .ant-input-lg .ant-input-disabled .ant-input-disabled){
+  backgroundColor: '#ffffff'!important;
+  fontColor: '#cccccc'!important;
+}
+:global(.ant-upload.ant-upload-select-picture-card){
+  
+}

@@ -1,0 +1,40 @@
+.box {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      height: 28px;
+      line-height: 28px;
+    }
+    .title {
+      font-size: 16px;
+      height: 21px;
+      line-height: 21px;
+      display: inline-block;
+    }
+    .pre {
+       
+       text-align: center;
+       background-color: rgba(242, 242, 242, 1);
+       border: 1px solid rgba(228, 228, 228, 1);
+       >span {
+         display: inline-block;
+         background-color: rgba(0, 153, 255, 1);
+         color: #fff;
+         padding: 0 5px;
+       }
+       >div {
+         position: relative;
+         top: 10px;
+       }
+    }
+
+  }
+}

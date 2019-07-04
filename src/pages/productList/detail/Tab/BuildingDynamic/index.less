@@ -1,0 +1,22 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  .title {
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0.85);
+    font-size:13px;
+    width: 90px;
+    &::before {
+      display: inline-block;
+      margin-right: 4px;
+      content: '*';
+      line-height: 1;
+      font-size: 13px;
+      color: #f5222d;
+    }
+  }
+  .upload {
+    width: 90px;
+  }
+}

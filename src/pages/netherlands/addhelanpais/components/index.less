@@ -1,0 +1,34 @@
+:global(.ant-tree) {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.box {
+  span {
+    display: inline-block;
+  }
+  .label {
+    color: #666;
+    >span:first-child {
+       width: 80px;
+    }
+    .span {
+      color:#999999;
+      margin: 5px 0;
+    }
+  }
+}
+
+.mytable-list .editable-cell {
+  position: relative;
+}
+
+.mytable-list .editable-cell-value-wrap {
+padding: 5px 12px;
+cursor: pointer;
+}
+
+.mytable-list .editable-row:hover .editable-cell-value-wrap {
+border: 1px solid #d9d9d9;
+border-radius: 4px;
+padding: 4px 11px;
+}
